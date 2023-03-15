@@ -1,0 +1,22 @@
+  <script>
+        const arr = Array.from({ lenght: 30 }, () => Math.floor(Math.random() * 100));
+        // console.log(arr);
+
+        const table = document.createElement('table');
+        let count = 0;
+        for (let i = 0; i < 5; i++) {
+            const tr = document.createElement('tr');
+            for (let j = 0; j < 6; j++) {
+                const td = document.createElement('td');
+                td.textContent = arr[count];
+                of(arr[count] >= 50){
+                    td.style.backgroundColor = 'orange';
+                }
+                tr.appendChild(td);
+                count++;
+            }
+            table.appendChild(tr);
+        }
+        // Добавляем таблицу на страницу
+        document.body.appendChild(table);
+    </script>
